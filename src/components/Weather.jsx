@@ -9,6 +9,9 @@ import sun_icon from '../assets/sun.png';
 import humidity_icon from '../assets/humidity.png';
 import wind_icon from '../assets/wind.png';
 import haze_icon from '../assets/haze.png';
+import nighthaze_icon from '../assets/nighthaze.png';
+import moon_icon from '../assets/moon.png';
+import cloudynight_icon from '../assets/cloudynight.png';
 import weather_icon from '../assets/weather.png';
 
 const Weather = () => {
@@ -17,20 +20,21 @@ const Weather = () => {
 
   const allIcons = {
     "01d": sun_icon,
-    "01n": sun_icon,
+    "01n": moon_icon,
     "02d": cloudy_icon,
-    "02n": cloudy_icon,
+    "02n": cloudynight_icon,
     "03d": cloudy_icon,
-    "03n": cloudy_icon,
+    "03n": cloudynight_icon,
     "04d": cloudy_icon,
-    "04n": cloudy_icon,
+    "04n": cloudynight_icon,
     "09d": rain_icon,
     "09n": rain_icon,
     "010d": storm_icon,
     "010n": storm_icon,
     "013d": snow_icon,
     "013n": snow_icon,
-    "50d": haze_icon
+    "50d": haze_icon,
+    "50n": nighthaze_icon,
   };
 
   const search = async (city) => {
